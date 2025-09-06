@@ -17,6 +17,14 @@ main {
     max-width: 840px;
 }
 
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 0;
+    box-shadow: 0 0 30px gray;
+}
+
 main img {
     width: 150px;
     height: auto;
