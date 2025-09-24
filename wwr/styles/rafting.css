@@ -39,8 +39,6 @@ footer {
     grid-template-columns: 90% 10%;
 }
 
-
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -105,7 +103,7 @@ nav, p, section, article {
 
 .History {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 80%;
     place-items: center;
 }
