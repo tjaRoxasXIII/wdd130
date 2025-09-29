@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    justify-self: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: grid;
+    background-color: #16c0e2;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: center;
+    
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #282828;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+input, select, textarea {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+
+}
+
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #393735;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    justify-self: center;
+}
+button:hover {
+    background-color: #1a1616;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
