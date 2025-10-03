@@ -44,14 +44,18 @@
                         <input type="email" id="useremail" name="useremail" required>
                     </div>
                     <div class="purpose">
-                        <label for="purpose">Message Purpose</label>
+                        <label>Message Purpose</label>
                         <div>
-                            <label><input type="radio" id="purpose" name="purpose">General Inquiry</label>
+                            <input type="radio" id="purpose-general" name="purpose" value="general">
+                            <label for="purpose-general">General Inquiry</label>
                             <br>
-                            <label><input type="radio" id="purpose" name="purpose">Reservation Request</label>
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            <label for="purpose-reservation">Reservation Request</label>
                             <br>
-                            <label><input type="radio" id="purpose" name="purpose">Website Suggestion</label>
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
                         </div>
+
                     </div>
                     <div>
                         <label for="message">Message</label>
