@@ -192,7 +192,7 @@ button {
     background: var(--accent1-color);
 }
 
-.employees h1 {
+.employees h2 {
     padding: 8px;
     grid-column-start: 1;
     grid-column-end: 4;
