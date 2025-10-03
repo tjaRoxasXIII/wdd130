@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #2e8b57;
-    --secondary-color: #35524a;
-    --accent1-color: #6b8e8b;
-    --accent2-color: #a2e8dd;
+    --primary-color: #104e1f;       /* Deep forest green */
+    --secondary-color: #665649;     /* Rich bark brown */
+    --accent1-color: #5a7d6c;       /* Muted sage green */
+    --accent2-color: #d4cbb3;       /* Soft sandstone beige */
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
+
 }
 
 * {
@@ -22,11 +23,17 @@ header {
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
+    background: var(--secondary-color)
+}
+
+header img {
+    padding: 8px;
 }
 
 nav{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 header, main, footer {
@@ -35,9 +42,11 @@ header, main, footer {
 }
 
 footer {
+    background: var(--accent2-color);
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 70% 30%;
 }
+
 
 h1, h2 {
     font-family: var(--heading-font);
@@ -63,9 +72,9 @@ nav, p, section, article {
     width: 100%;
     padding: 8px;
     text-align: center;
+    color: white;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: black;
 }
 
 .hero article {
@@ -73,7 +82,8 @@ nav, p, section, article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--accent2-color);
+  color: white;
+  background-color: var(--accent1-color);
   opacity: 0.8;
   padding: 16px;
   
@@ -129,4 +139,77 @@ nav, p, section, article {
 
 .Adventures img {
     width: 100px;
+}
+
+.contactinfo, .employees {
+    margin: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.mapform {
+    margin: 8px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+   
+}
+
+.mapform iframe {
+    max-width: 400px;;
+}
+
+form {
+    padding: 8px;
+    text-align: left;
+    margin: 8px;
+    width: 100%;
+}
+
+form input {
+    margin: 5px 0;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+}
+.purpose label {
+    align-self: center;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.employees{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: var(--accent1-color);
+}
+
+.employees h1 {
+    padding: 8px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: var(--accent2-color);
+}
+
+.employees img, .employees figcaption {
+    background: var(--accent2-color);
+}
+
+.employees img {
+    padding: 10px;;
+    width: 150px;
+    margin: auto;
+}
+
+.employees a {
+    color: white
 }
