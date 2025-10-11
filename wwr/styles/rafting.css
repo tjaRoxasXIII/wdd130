@@ -23,7 +23,7 @@ header {
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
-    background: var(--secondary-color)
+    background: var(--secondary-color);
 }
 
 header img {
@@ -33,7 +33,6 @@ header img {
 nav{
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 header, main, footer {
@@ -108,7 +107,7 @@ nav, p, section, article {
 
 
 .flex-item:hover {
-    color: var(--accent2-color);
+    color: white;
 }
 
 .socialmedia a {
@@ -162,7 +161,7 @@ nav, p, section, article {
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
     background-color: var(--accent1-color);
-    color: #333;
+    color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
