@@ -41,6 +41,43 @@ header, main, footer {
     margin: 0 auto;
 }
 
+.grid-container {
+    display: grid;
+    margin: 16px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    justify-items: center;
+}
+
+section .mission {
+    grid-column: 1;
+    text-align: center;
+    padding: 16px;
+}
+
+section .offerings {
+    grid-column: 2;
+    text-align: center;
+    padding: 16px;
+}
+
+.call-to-action {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin: 16px 0;
+}
+.section-newsletter {
+    justify-content: center;
+    padding: 16px;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.section-newsletter  {
+    text-align: center;
+}
+
 footer {
     background: var(--accent2-color);
     display: grid;
@@ -58,6 +95,22 @@ nav, p, section, article {
     padding: 8px;
 }
 
+.call-to-action {
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.call-to-action h2 {
+    margin-bottom: 8px;
+}
+
+
+.flex-item:hover {
+    color: var(--accent2-color);
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -70,25 +123,29 @@ nav, p, section, article {
     position: absolute;
     top: 20px;
     width: 100%;
+    max-width: 100%;
     padding: 8px;
     text-align: center;
     color: white;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent1-color);
 }
 
+.hero a {
+    color: inherit;
+}
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  color: white;
-  background-color: var(--accent1-color);
-  opacity: 0.8;
-  padding: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    padding: 16px;
+    font-size: 1.1em;
   
 }
-
 
 .hero article img {
     float: right;
@@ -96,7 +153,6 @@ nav, p, section, article {
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -109,6 +165,7 @@ nav, p, section, article {
     color: #333;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .History {
@@ -157,11 +214,11 @@ nav, p, section, article {
 }
 
 .mapform iframe {
+    margin: 8px;
     max-width: 400px;
 }
 
 form {
-    padding: 8px;
     text-align: left;
     margin: 8px;
     width: 100%;
@@ -218,3 +275,107 @@ button {
 .employees a {
     color: white
 }
+
+.mission, .offerings {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.mission img, .offerings img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mission h3, .offerings h3 {
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+.rafting-trips {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px;
+    background: var(--accent2-color);
+    border-radius: 5px;
+}
+
+.trip {
+    align-items: flex-start;
+    gap: 1.3rem;
+    background: var(--accent1-color);
+    border-radius: 5px;
+}
+
+.trip img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-text {
+    font-size: larger;
+    min-width: 200px;
+    
+}
+
+.trip-text h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-decoration: underline;
+
+}
+
+.trip-text p {
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--accent2-color);
+}
+
+table {
+    justify-self: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 1rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+caption {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+thead {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+thead th {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+tbody th {
+    background-color: var(--accent1-color);
+    font-weight: normal;
+}
+
+td, th {
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+
+
+
